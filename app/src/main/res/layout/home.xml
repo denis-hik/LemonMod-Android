@@ -1,0 +1,149 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="8dp"
+		android:background="#000000"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="horizontal">
+		<ImageView
+			android:id="@+id/imageview4"
+			android:layout_width="25dp"
+			android:layout_height="50dp"
+			android:src="@drawable/ic_view_list_white"
+			android:scaleType="center"
+			app:tint="#ffc107" />
+		<ImageView
+			android:id="@+id/imageview1"
+			android:layout_width="25dp"
+			android:layout_height="50dp"
+			android:src="@drawable/ic_get_app_white"
+			android:scaleType="centerInside"
+			app:tint="#ffc107" />
+		<LinearLayout
+			android:id="@+id/linear3"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:padding="8dp"
+			android:orientation="vertical"
+			android:layout_weight="1"
+			android:textColor="#ffffff"
+			maxWidth="150dp">
+			<Spinner
+				android:id="@+id/spinner1"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:spinnerMode="dropdown"
+				android:textColor="#ffffff" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/linear7"
+			android:layout_width="wrap_content"
+			android:layout_height="50dp"
+			android:gravity="right"
+			android:orientation="vertical"
+			android:layout_weight="10">
+			<TextView
+				android:id="@+id/textview1"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:padding="8dp"
+				android:gravity="right|center_vertical"
+				android:text="LemonMod"
+				android:textSize="16sp"
+				android:textColor="#FFC107" />
+			<TextView
+				android:id="@+id/textview4"
+				android:layout_width="wrap_content"
+				android:layout_height="20dp"
+				android:text="unoffical"
+				android:textSize="12sp"
+				android:textColor="#FFFFFF"
+				android:translationX="-10.0dp"
+				android:translationY="-20.0dp" />
+		</LinearLayout>
+		<ImageView
+			android:id="@+id/imageview2"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:src="@drawable/loader"
+			android:scaleType="centerInside" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/linear2"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#263238"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/block_error"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:background="#263238"
+			android:orientation="horizontal"
+			android:visibility="gone">
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cardview1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="#FF5722"
+				android:orientation="vertical"
+				app:cardElevation="10dp"
+				app:cardCornerRadius="20dp">
+				<LinearLayout
+					android:id="@+id/linear4"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview2"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Not pathed!"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview3"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Pls, patch your geme in vrchat"
+						android:textSize="12sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+			</androidx.cardview.widget.CardView>
+		</LinearLayout>
+		<GridView
+			android:id="@+id/gridview1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:background="#263238"
+			android:layout_weight="1"
+			android:numColumns="3"
+			android:stretchMode="columnWidth" />
+		<LinearLayout
+			android:id="@+id/linear5"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<ImageView
+				android:id="@+id/imageview5"
+				android:layout_width="match_parent"
+				android:layout_height="70dp"
+				android:background="#FF5722"
+				android:src="@drawable/ads"
+				android:scaleType="centerInside" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
